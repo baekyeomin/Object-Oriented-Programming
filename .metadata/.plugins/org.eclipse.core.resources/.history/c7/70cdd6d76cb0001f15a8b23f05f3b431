@@ -1,0 +1,32 @@
+// ****************************************************************
+// CountLetters.java
+//
+// Reads a word from the standard input and prints the number of
+// occurrences of each letter in that word.
+//
+// ****************************************************************
+import java.util.Scanner;
+
+public class CountLetters {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] counts = new int[26];
+        System.out.print("Enter a sentence: ");
+        String sentence = scanner.nextLine();
+        sentence = sentence.toUpperCase();
+
+        for (int i = 0; i < sentence.length(); i++) {
+            char ch = sentence.charAt(i);
+            try {
+                counts[ch - 'A']++;
+            } catch (ArrayIndexOutOfBoundsException e) {
+            }
+        }
+
+        for (int i = 0; i < counts.length; i++) {
+            if (counts[i] > 0) {
+                System.out.println((char) (i + 'A') + ": " + counts[i]);
+            }
+        }
+    }
+}
