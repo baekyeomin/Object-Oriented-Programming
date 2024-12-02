@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"<Unnamed>","c":"PPoint","l":"getX()"},{"p":"<Unnamed>","c":"PPoint","l":"getY()"},{"p":"<Unnamed>","c":"PPointTest","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"<Unnamed>","c":"PPoint","l":"PPoint(int, int)","u":"%3Cinit%3E(int,int)"},{"p":"<Unnamed>","c":"PPointTest","l":"PPointTest()","u":"%3Cinit%3E()"}];updateSearchResults();
